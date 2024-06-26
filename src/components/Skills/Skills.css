@@ -1,0 +1,144 @@
+.s-container {
+  /* background-color: antiquewhite; */
+  margin-top: 3rem;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.top-head {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* background-color: antiquewhite; */
+  box-shadow: 0px 12px 20px -9px rgba(91, 115, 209, 0.25);
+}
+
+.top-head:after {
+  transition: all ease-in-out 0.2s;
+  background: none repeat scroll 0 0 #ffffff;
+  content: "";
+  border-bottom: 2px solid rgb(67, 128, 240);
+  display: block;
+  height: 2px;
+  width: 0;
+}
+
+.top-head:hover:after {
+  width: 100%;
+}
+
+.professional {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.pro-head {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.skill-box {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(67, 128, 240);
+}
+
+.pro-skills {
+  display: flex;
+  gap: 5rem;
+  margin-left: 4rem;
+}
+
+.pro-skills span {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.skills-logo {
+  width: 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0px 12px 20px -9px rgba(91, 115, 209, 0.25);
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.pre-head {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.per-skills {
+  display: flex;
+  gap: 4rem;
+  margin-left: 4rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+.per-skill-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(67, 128, 240);
+}
+
+.skills-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .pro-skills {
+    display: flex;
+    gap: 8rem;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .per-skills {
+    display: flex;
+    gap: 4rem;
+    margin-left: 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 588px) {
+  .s-container {
+    margin-top: 0rem;
+  }
+}
+

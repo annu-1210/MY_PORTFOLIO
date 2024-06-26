@@ -1,0 +1,343 @@
+.card-container {
+  max-height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: transparent;
+  gap: 1rem;
+}
+
+.card-left {
+  width: 25rem;
+  height: 30rem;
+  background-color: rgb(236, 229, 223);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-box {
+  padding: 0rem 0 0 0;
+  margin-top: 1rem;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  background-color: white;
+  /* background-image: url(../../../public/Annu-poonia-portfolio.png); */
+  /* background-image: url(../../../public/ap-image.jpg); */
+  background-image: url(../../../public/annu-image.jpg);
+}
+
+/* 
+ */
+
+.name-box span {
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 700;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: azure; */
+}
+
+.divider {
+  width: 4rem;
+  border: 1.5px solid rgb(67, 128, 240);
+}
+
+.description-box {
+  color: rgb(26, 25, 25);
+  letter-spacing: 0.2rem;
+  /* background-color: beige; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-links {
+  background-color: white;
+  margin-top: 1.9rem;
+  width: 100%;
+  height: 3.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-right {
+  width: 70%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* background-color: aquamarine; */
+}
+
+.right-span1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.right-span2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-left-links {
+  display: none;
+}
+
+.card-left-links a {
+  text-decoration: none;
+}
+
+.card-right-links {
+  display: flex;
+  gap: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.7rem;
+}
+
+.card-right-links a {
+  text-decoration: none;
+}
+
+.right-link1 {
+  padding: 0.5rem 1.5rem;
+  border-radius: 18px;
+  background-color: rgb(36, 105, 234);
+  color: white;
+  border: 1px solid rgb(36, 105, 234);
+  position: relative;
+  display: inline-block;
+}
+
+.right-link1:hover {
+  background-color: white;
+  color: rgb(26, 25, 25);
+  border: 1px solid rgb(26, 25, 25);
+  cursor: pointer;
+}
+
+.right-link2 {
+  padding: 0.5rem 1.5rem;
+  border-radius: 18px;
+  background-color: white;
+  color: rgb(26, 25, 25);
+  border: 1px solid rgb(26, 25, 25);
+}
+
+.right-link2:hover {
+  background-color: rgb(36, 105, 234);
+  color: white;
+  border: 1px solid rgb(36, 105, 234);
+}
+
+.my-intro {
+  padding: 1rem 1rem 2rem 0;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 100%;
+  line-height: 2.5rem;
+  text-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .right-span1 {
+    font-size: 4.5rem;
+  }
+
+  .my-intro {
+    padding: 0.5rem 0.5rem 2rem 0;
+    font-size: 1rem;
+    line-height: 1.9rem;
+  }
+}
+
+@media (max-width: 861px) {
+  .right-span1 {
+    font-size: 4rem;
+  }
+
+  .my-intro {
+    padding: 0.5rem 0.5rem 2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .card-right {
+    padding: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 861px) {
+  .my-intro {
+    padding: 0.5rem 0rem 2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+  .card-right {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 716px) {
+  .card-right {
+    width: 20rem;
+  }
+  .card-left {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .card-right {
+    width: 18rem;
+  }
+  .right-span2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-right {
+    width: 16rem;
+  }
+  .right-span1 {
+    font-size: 3.6rem;
+  }
+  .right-span2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 621px) {
+  .right-span1 {
+    font-size: 3.2rem;
+  }
+  .right-span2 {
+    font-size: 0.8rem;
+  }
+  .description-box {
+    font-size: 0.8rem;
+  }
+  .card-left {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 588px) {
+  .card-container {
+    max-height: 70rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+    gap: 1rem;
+  }
+  .card-left {
+    width: 24rem;
+    height: 33rem;
+  }
+
+  .card-right {
+    width: 24rem;
+  }
+
+  .card-left-links {
+    display: flex;
+    gap: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1.35rem;
+  }
+
+  .card-right-links {
+    display: none;
+  }
+
+  .description-box {
+    display: none;
+  }
+
+  .right-span2 {
+    font-size: 1rem;
+  }
+
+  .my-intro {
+    padding: 0.5rem 0rem 2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.9rem;
+  }
+}
+
+@media (max-width: 556px) {
+  .card-left {
+    width: 21rem;
+    height: 33rem;
+  }
+}
+
+@media (max-width: 521px) {
+  .card-right {
+    width: 21rem;
+  }
+}
+
+@media (max-width: 457px) {
+  .card-left {
+    width: 20rem;
+    height: 33rem;
+  }
+  .card-right {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .card-left {
+    width: 18rem;
+    height: 33rem;
+  }
+  .card-right {
+    width: 20rem;
+  }
+  .right-link1 {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  .right-link2 {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:410px) {
+  .card-left {
+    width: 17rem;
+    height: 33rem;
+  }
+  .card-right {
+    width: 18.5rem;
+  }
+}

@@ -1,0 +1,166 @@
+/*  */
+
+.about-container {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  /* background-color: aquamarine; */
+}
+
+.about-left {
+  width: 30rem;
+  background-color: rgb(223, 215, 204);
+}
+
+.about-card {
+  position: absolute;
+  top: 18rem;
+  left: 9rem;
+  max-width: 65rem;
+}
+
+@media (max-width: 1170px) {
+  .about-left {
+    width: 29rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-left {
+    width: 28.7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-left {
+    width: 28.1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-left {
+    width: 26rem;
+  }
+
+  .about-card {
+    top: 18rem;
+    left: 7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-left {
+    width: 22rem;
+  }
+
+  .about-card {
+    left: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-left {
+    width: 19rem;
+  }
+
+  .about-card {
+    left: 2rem;
+  }
+}
+
+@media (max-width: 717px) {
+  .about-card {
+    left: 3rem;
+  }
+}
+
+@media (max-width: 621px) {
+  .about-left {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 588px) {
+  .about-container {
+    width: 100%;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-left {
+    width: 100%;
+    height: 10rem;
+    background-color: white;
+  }
+
+  .about-right {
+    width: 100%;
+    height: 54rem;
+    background-color: rgb(223, 215, 204);
+  }
+  .about-card {
+    top: 11rem;
+    left: 6rem;
+  }
+}
+
+@media (max-width:513px) {
+  .about-card {
+    left: 5rem;
+  }
+}
+
+@media (max-width:480px) {
+  .about-card {
+    left: 4rem;
+  }
+}
+
+@media (max-width:457px) {
+  .about-card {
+    left: 4rem;
+  }
+  .about-container{
+    height: 70rem;
+  }
+  .about-right{
+    height: 57rem;
+  }
+}
+
+@media (max-width:440px) {
+  .about-card {
+    left: 4.2rem;
+  }
+}
+
+@media (max-width:398px) {
+  .about-card {
+    left: 3.3rem;
+  }
+}
+
+@media (max-width:370px) {
+  .about-card {
+    left: 3rem;
+  }
+}
+
+@media (max-width:360px) {
+  .about-card {
+    left: 2.5rem;
+  }
+}
+
+@media (max-width:340px) {
+  .about-card {
+    left: 2rem;
+  }
+}
+
+@media (max-width:330px) {
+  .about-card {
+    left: 1rem;
+  }
+}
