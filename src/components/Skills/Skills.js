@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useEffect}from "react";
 import "./Skills.css";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 function Skills() {
+
+useEffect(()=>{
+    AOS.init({duration: 2000})
+      },[])
+      
   return (
     <section className="s-wrapper">
       <div className="s-container">
@@ -15,23 +22,23 @@ function Skills() {
             <span>Professional Skills</span>
           </div>
           <div className="pro-skills">
-            <div className="skills-logo">
+            <div className="skills-logo" data-aos='fade-up' >
               <span>HTML</span>
               <img src="./HTML_icon.svg" alt="logo" width={80} />
             </div>
-            <div className="skills-logo">
+            <div className="skills-logo" data-aos='fade-up' >
               <span>CSS</span>
               <img src="./CSS-icon.svg" alt="logo" width={70} />
             </div>
-            <div className="skills-logo">
+            <div className="skills-logo" data-aos='fade-up' >
               <span>JavaScript</span>
               <img src="./JAVASCRIPT-icon.svg" alt="logo" width={90} />
             </div>
-            <div className="skills-logo">
+            <div className="skills-logo" data-aos='fade-up' >
               <span>React</span>
               <img src="./REACT-icon.svg" alt="logo" width={90} />
             </div>
-            <div className="skills-logo">
+            <div className="skills-logo" data-aos='fade-up' >
               <span>Git</span>
               <img src="./git-logo.png" alt="logo" width={90} />
             </div>
@@ -43,19 +50,19 @@ function Skills() {
             <span>Personal Skills</span>
           </div>
           <div className="per-skills">
-            <div className="skills-div">
+            <div className="skills-div" data-aos='fade-right'>
               <div className="per-skill-box"></div>
               <span>Communication</span>
             </div>
-            <div className="skills-div">
+            <div className="skills-div" data-aos='fade-right'>
               <div className="per-skill-box"></div>
               <span>Problem Solving</span>
             </div>
-            <div className="skills-div">
+            <div className="skills-div" data-aos='fade-right'>
               <div className="per-skill-box"></div>
               <span>Team Work</span>
             </div>
-            <div className="skills-div">
+            <div className="skills-div" data-aos='fade-right'>
               <div className="per-skill-box"></div>
               <span>Time Management</span>
             </div>

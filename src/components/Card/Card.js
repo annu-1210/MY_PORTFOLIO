@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useEffect}from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import "./Card.css";
+import AOS from "aos";
+import 'aos/dist/aos.css' 
 
 function Card() {
+
+  useEffect(()=>{
+        AOS.init({duration: 2000})
+          },[])
   return (
     <section className="card-wrapper">
-      <div className="card-container">
-        <div className="card-left">
+      <div className="card-container" data-aos='fade-up' hu>
+        <div className="card-left" data-aos="flip-right">
           <div className="img-box">
           </div>
           <div className="name-box">
@@ -44,7 +50,7 @@ function Card() {
             </a>
           </div>
         </div>
-        <div className="card-right">
+        <div className="card-right" data-aos='fade-right'>
           <span className="right-span1">Hello</span>
           <span className="right-span2">Here's who I am and what I do</span>
           <div className="card-right-links">
