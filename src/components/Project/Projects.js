@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import { FaGithub } from "react-icons/fa";
 import { BsRocketTakeoffFill } from "react-icons/bs";
@@ -7,10 +7,10 @@ import 'aos/dist/aos.css'
 
 function Projects() {
 
-  useEffect(()=>{
-        AOS.init({duration: 2000})
-          },[])
-  
+  useEffect(() => {
+    AOS.init({ duration: 2000 })
+  }, [])
+
   return (
     <section className="projects-wrapper">
       <div className="projects-container">
@@ -19,8 +19,7 @@ function Projects() {
           <span>PROJECTS</span>
         </div>
         <div className="Boxes">
-          <div className="project-box" 
-          /*data-aos='fade-right'*/
+          <div className="project-box"
           >
             <div className="box-leftSection">
               <div className="project-name">
@@ -55,8 +54,7 @@ function Projects() {
               <img src="./project1-media.png" alt="logo" />
             </div>
           </div>
-          <div className="project-box" 
-          /*data-aos='fade-left'*/
+          <div className="project-box"
           >
             <div className="box-leftSection">
               <div className="project-name">

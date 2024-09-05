@@ -1,16 +1,24 @@
-import React, {useEffect}from "react";
+import React, { useEffect } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import "./Card.css";
 import AOS from "aos";
-import 'aos/dist/aos.css' 
+import 'aos/dist/aos.css'
 
-function Card() {
+const description = " I am a dedicated individual with experience in React.js, HTML, CSS, " +
+  "and JavaScript. I am committed to leveraging my skills to develop " +
+  "innovative projects that contribute to user-friendly and efficient " +
+  "solutions. I am seeking opportunities to enhance my skills and " +
+  "contribute effectively to innovative projects.";
 
-  useEffect(()=>{
-        AOS.init({duration: 2000})
-          },[])
+function Card(props) {
+  const { gitHub, instagram, linkedIn, firstname, lastname, title } = props;
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 })
+  }, [])
+
   return (
     <section className="card-wrapper">
       <div className="card-container" data-aos='fade-up' hu>
@@ -18,8 +26,8 @@ function Card() {
           <div className="img-box">
           </div>
           <div className="name-box">
-            <span>Annu</span>
-            <span>Poonia</span>
+            <span>{firstname}</span>
+            <span>{lastname}</span>
           </div>
           <div className="divider"></div>
           <div className="card-left-links">
@@ -36,16 +44,16 @@ function Card() {
             </a>
           </div>
           <div className="description-box">
-            <span>FRONT-END DEVELOPER</span>
+            <span>{title}</span>
           </div>
           <div className="card-links">
-            <a href="https://www.linkedin.com/in/annu-poonia-b761222b7/">
+            <a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn size={25} />
             </a>
-            <a href="https://github.com/annu-1210">
+            <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
               <FaGithub size={25} />
             </a>
-            <a href="https://www.instagram.com/poonia_1210/">
+            <a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer">
               <FaInstagram size={25} />
             </a>
           </div>
@@ -67,11 +75,7 @@ function Card() {
             </a>
           </div>
           <span className="my-intro">
-            I am a dedicated individual with experience in React.js, HTML, CSS,
-            and JavaScript. I am committed to leveraging my skills to develop
-            innovative projects that contribute to user-friendly and efficient
-            solutions. I am seeking opportunities to enhance my skills and
-            contribute effectively to innovative projects.
+            {description}
           </span>
         </div>
       </div>
