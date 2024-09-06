@@ -3,6 +3,9 @@ import "./Skills.css";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
+
+const personalSkillset = ["Communication", "Problem Solving", "Team Work", "Time Management"];
+
 function Skills() {
 
   useEffect(() => {
@@ -50,22 +53,13 @@ function Skills() {
             <span>Personal Skills</span>
           </div>
           <div className="per-skills">
-            <div className="skills-div" data-aos='fade-right'>
-              <div className="per-skill-box"></div>
-              <span>Communication</span>
-            </div>
-            <div className="skills-div" data-aos='fade-right'>
-              <div className="per-skill-box"></div>
-              <span>Problem Solving</span>
-            </div>
-            <div className="skills-div" data-aos='fade-right'>
-              <div className="per-skill-box"></div>
-              <span>Team Work</span>
-            </div>
-            <div className="skills-div" data-aos='fade-right'>
-              <div className="per-skill-box"></div>
-              <span>Time Management</span>
-            </div>
+            {personalSkillset.map((skill) => {
+              return (
+                <div className="skills-div" data-aos='fade-right' key={skill}>
+                  <div className="per-skill-box"></div>
+                  <span>{skill}</span>
+                </div>)
+            })}
           </div>
         </div>
       </div>
