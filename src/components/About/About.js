@@ -9,7 +9,7 @@ const portfolioProps = {
   title: "FRONT-END DEVELOPER",
   email: "annupoonia086@gmail.com",
   gitHub: "annu-1210",
-  instagram: "poonia_1210 ",
+  instagram: "ann.upoonia",
   linkedIn: "annu-poonia-b761222b7/",
   twitter: "poonia_1210",
 }

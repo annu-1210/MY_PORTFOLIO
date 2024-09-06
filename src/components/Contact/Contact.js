@@ -37,7 +37,7 @@ function Contact() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      message me
+                      text me
                     </a>
                     <IoIosArrowRoundForward />
                   </div>
@@ -98,7 +98,7 @@ function Contact() {
                   <a href="https://github.com/annu-1210">
                     <FaGithub size={25} />
                   </a>
-                  <a href="https://www.instagram.com/poonia_1210/">
+                  <a href="https://www.instagram.com/ann.upoonia/">
                     <FaInstagram size={25} />
                   </a>
                 </div>

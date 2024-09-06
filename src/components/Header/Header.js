@@ -39,7 +39,7 @@ function Header() {
               </div>
             )}
             <a href="#about" className="header-links">
-              ABOUT ME
+              ABOUT
             </a>
             <a href="#projects" className="header-links">
               PROJECTS
