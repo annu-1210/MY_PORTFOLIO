@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Skills.css";
 import AOS from "aos";
-import 'aos/dist/aos.css'
-
+import 'aos/dist/aos.css';
+import skillSet from "../../assets/mySkills";
 
 const personalSkillset = ["Communication", "Problem Solving", "Team Work", "Time Management"];
 
@@ -25,26 +25,13 @@ function Skills() {
             <span>Professional Skills</span>
           </div>
           <div className="pro-skills">
-            <div className="skills-logo" data-aos='fade-up' >
-              <span>HTML</span>
-              <img src="./HTML_icon.svg" alt="logo" width={80} />
-            </div>
-            <div className="skills-logo" data-aos='fade-up' >
-              <span>CSS</span>
-              <img src="./CSS-icon.svg" alt="logo" width={70} />
-            </div>
-            <div className="skills-logo" data-aos='fade-up' >
-              <span>JavaScript</span>
-              <img src="./JAVASCRIPT-icon.svg" alt="logo" width={90} />
-            </div>
-            <div className="skills-logo" data-aos='fade-up' >
-              <span>React</span>
-              <img src="./REACT-icon.svg" alt="logo" width={90} />
-            </div>
-            <div className="skills-logo" data-aos='fade-up' >
-              <span>Git</span>
-              <img src="./git-logo.png" alt="logo" width={90} />
-            </div>
+            {skillSet.map((skills) => {
+              return (
+                <div className="skills-box" data-aos='fade-up' key={skills.id} >
+                  <img src={skills.image} alt="logo" width={50} />
+                  <span>{skills.name}</span>
+                </div>)
+            })}
           </div>
         </div>
         <div className="personal">

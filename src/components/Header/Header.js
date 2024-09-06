@@ -38,13 +38,13 @@ function Header() {
                 />
               </div>
             )}
-            <a href="/" className="header-links">
+            <a href="#about" className="header-links">
               ABOUT ME
             </a>
-            <a href="/projects" className="header-links">
+            <a href="#projects" className="header-links">
               PROJECTS
             </a>
-            <a href="/contact" className="header-links">
+            <a href="#contact" className="header-links">
               CONTACT
             </a>
             <a

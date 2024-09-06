@@ -13,7 +13,7 @@ function Projects() {
 
   return (
     <section className="projects-wrapper">
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
         <div className="project-head">
           <div className="bullet-box"></div>
           <span>PROJECTS</span>
