@@ -64,6 +64,7 @@
   display: flex;
   gap: 4rem;
   margin-left: 4rem;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -80,7 +81,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  box-shadow: 0px 12px 20px -9px rgba(91, 115, 209, 0.25); 
+  box-shadow: 0px 12px 20px -9px rgba(91, 115, 209, 0.25);
   cursor: pointer;
   border-top: 1px solid rgb(108, 106, 106);
   border-left: 1px solid rgb(107, 107, 107);
@@ -110,6 +111,7 @@
   margin-left: 4rem;
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
+  flex-wrap: wrap;
 }
 
 .per-skill-box {
@@ -125,27 +127,98 @@
   gap: 1rem;
 }
 
+@media (max-width: 1158px) {
+  .skills-box {
+    width: 24rem;
+  }
+  .pro-skills {
+    gap: 4rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .pro-skills {
-    display: flex;
-    gap: 8rem;
+    gap: 6rem;
     margin-left: 2rem;
-    flex-wrap: wrap;
   }
 
   .per-skills {
-    display: flex;
-    gap: 4rem;
     margin-left: 2rem;
-    letter-spacing: 0.1rem;
-    font-size: 1.1rem;
-    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-box {
+    width: 22rem;
+  }
+  .pro-skills {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 864px) {
+  .skills-box {
+    width: 21rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 832px) {
+  .skills-box {
+    width: 20rem;
+  }
+  .pro-skills {
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .skills-box {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 728px) {
+  .skills-box {
+    width: 16rem;
+  }
+  .pro-skills {
+    gap: 3.1rem;
+  }
+}
+
+@media (max-width: 658px) {
+  .skills-box {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 598px) {
+  .skills-box {
+    width: 13rem;
+  }
+  .pro-skills {
+    gap: 3rem;
   }
 }
 
 @media (max-width: 588px) {
   .s-container {
     margin-top: 0rem;
+  } 
+}
+
+@media (max-width: 560px) {
+  .skills-box {
+    width: 90%;
   }
 }
 
+@media (max-width: 365px) {
+  .skills-box {
+    width: 6rem;
+  }
+  .skills-box span{
+    display: none;
+  }
+}
