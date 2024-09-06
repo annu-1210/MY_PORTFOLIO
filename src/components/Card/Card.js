@@ -70,7 +70,7 @@ function Card(props) {
               RESUME
             </a>
 
-            <a href="/projects" className="right-link2">
+            <a href="#projects" className="right-link2">
               PROJECTS
             </a>
           </div>
