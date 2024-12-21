@@ -1,6 +1,6 @@
 .projects-container {
   /* background-color: rgb(223, 215, 204); */
-  padding: 3rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
