@@ -132,7 +132,7 @@
     width: 24rem;
   }
   .pro-skills {
-    gap: 4rem;
+    gap: 0rem;
   }
 }
 
@@ -205,7 +205,7 @@
 @media (max-width: 588px) {
   .s-container {
     margin-top: 0rem;
-  } 
+  }
 }
 
 @media (max-width: 560px) {
@@ -218,7 +218,12 @@
   .skills-box {
     width: 6rem;
   }
-  .skills-box span{
+  .skills-box span {
     display: none;
+  }
+  .pro-skills {
+    margin-left: 0rem;
+    gap: 3rem 4rem;
+    justify-content: center;
   }
 }
