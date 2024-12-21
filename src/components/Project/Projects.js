@@ -50,9 +50,6 @@ function Projects() {
                 including desktops, tablets, and smartphones.
               </div>
             </div>
-            <div className="box-rightSection-1 box-rightSection">
-              <img src="./project1-media.png" alt="logo" />
-            </div>
           </div>
           <div className="project-box"
           >
@@ -81,9 +78,6 @@ function Projects() {
                 experience for all visitors. The website is built to be
                 responsive, ensuring accessibility across various devices.
               </div>
-            </div>
-            <div className="box-rightSection-2 box-rightSection">
-              <img src="./project2-media.png" alt="logo" />
             </div>
           </div>
         </div>
