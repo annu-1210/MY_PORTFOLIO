@@ -33,8 +33,8 @@ function Card(props) {
           <div className="card-left-links">
             <a
               className="right-link1"
-              download="MY_RESUME.pdf"
-              href="/Annu_Poonia_Resume.pdf"
+              download="/Annu-Poonia.pdf"
+              href="/Annu-Poonia.pdf"
             >
               RESUME
             </a>
@@ -64,8 +64,8 @@ function Card(props) {
           <div className="card-right-links">
             <a
               className="right-link1"
-              download="MY_RESUME.pdf"
-              href="/MY_RESUME.pdf"
+              download="/Annu-Poonia.pdf"
+              href="/Annu-Poonia.pdf"
             >
               RESUME
             </a>
