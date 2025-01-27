@@ -50,7 +50,7 @@ function Header() {
             <a
               href="/MY_RESUME.pdf"
               className="header-links"
-              download="MY_RESUME.pdf"
+              download="/Annu_Poonia_Resume.pdf"
             >
               RESUME
             </a>

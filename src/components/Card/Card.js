@@ -34,7 +34,7 @@ function Card(props) {
             <a
               className="right-link1"
               download="MY_RESUME.pdf"
-              href="/MY_RESUME.pdf"
+              href="/Annu_Poonia_Resume.pdf"
             >
               RESUME
             </a>
